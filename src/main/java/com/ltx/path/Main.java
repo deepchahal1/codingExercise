@@ -4,7 +4,6 @@ import com.ltx.path.RouteManagerImpl.*;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
@@ -17,7 +16,7 @@ import java.util.List;
  * to load data from file set VM argument -DcityRouteFile=<>, default value is "testDataFile.txt", saved in same samke package.
  * Source city VM argument -Dcity1=<>  default value is "Atlanta"
  * Destination city VM argument -Dcity2=<>  default value is "Louisville"
- * 
+ *
  * @author PradeepKrChahal
  * 
  */
@@ -26,9 +25,10 @@ public class Main {
 	public static void main(String[] args) {
         //property cityRouteFile is used if loading routes info from file
 		@SuppressWarnings("unused")
-		String cityRouteFile = System.getProperty("cityRouteFile", "testDataFile.txt");
-		String city1 = System.getProperty("city1", "Atlanta");
-		String city2 = System.getProperty("city2", "Louisville");
+		String cityRouteFile = System.getProperty("cityRouteFile", "testDataFile.txt");//either change default here itself or pass through VM arguments
+		String city1 = System.getProperty("city1", "Atlanta");//either change default here itself or pass through VM arguments
+		String city2 = System.getProperty("city2", "Louisville");//either change default here itself or pass through VM arguments
+
 
 				
 		// creating routeManager instance from routes stored in list
@@ -89,7 +89,7 @@ public class Main {
 	/**
 	 * This function return RouteManagrImpl initialize with rout.eList
 	 * 
-	 * @param  List<String> routeList  (delimiter separated routes list)
+	 * @param  routeList  (delimiter separated routes list)
 	 */
 	private static RouteManager loadRoutesFromList(final List<String> routeList){
 		final RouteManager routeManager = new RouteManagerImpl();
@@ -104,7 +104,7 @@ public class Main {
 	}
 	
 	//sample routes stored in list.
-	public final static List<String> routeList = new ArrayList<>();
+	private final static List<String> routeList = new ArrayList<>();
 	  static{
 		  routeList.add("Atlanta,New Orleans");
 		  routeList.add("New Orleans, Oklahoma City");
