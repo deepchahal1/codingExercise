@@ -1,0 +1,29 @@
+Atlanta,New Orleans
+New Orleans, Oklahoma City
+Atlanta,Miami
+Atlanta,Charlotte
+Charlotte,Richmond
+Richmond,Louisville
+Chicago,St. Louis
+Chicago,Indianapolis
+St. Louis,Kansas City
+Kansas City,Omaha
+Omaha,Denver
+Richmond,Washington
+Washington,Baltimore
+Baltimore,Philadelphia
+Philadelphia,Pittsburgh
+Philadelphia,Newark
+Newark,New York
+New York,Boston
+Boston,Montreal
+Pittsburgh,Cleveland
+Pittsburgh,New York
+Pittsburgh,Charlotte
+Cleveland,Detroit
+Dallas,El Paso
+El Paso, Phoenix
+El Paso, Albuquerque
+Phoenix,San Diego
+San Diego, Los Angeles
+Los Angeles,San Francisco
